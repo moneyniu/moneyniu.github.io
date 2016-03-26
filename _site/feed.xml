@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">苹果园</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2016-02-23T23:12:50+08:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>yekki</name>
+  <uri>http://localhost:4000/</uri>
+  <email>gary.niu@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[本博客安装简略]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/jekyll-blog-installation/" />
+  <id>http://localhost:4000/jekyll-blog-installation</id>
+  <updated>2016-02-23 22:32:39 +0800T00:00:00-00:00</updated>
+  <published>2016-02-23T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;section&quot;&gt;下载博客项目&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/yekki/yekki.github.com
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;yekki.github.com&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;gfw&quot;&gt;穿越GFW&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem sources --remove https://rubygems.org/
+
+gem sources -a https://ruby.taobao.org/
+
+gem install bundle
+
+bundle config &lt;span class=&quot;s1&quot;&gt;&#39;mirror.https://rubygems.org&#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;https://ruby.taobao.org&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;安装博客&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install jekyll
+
+bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;配置域名&lt;/h2&gt;
+&lt;p&gt;在根目录下创建文件CNAME，内容为一行域名，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;www.yekki.me&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;记得修改_config.yml，尤其是记得添加域名配置&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;url:  http://www.yekki.me&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll-blog-installation/&quot;&gt;本博客安装简略&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[OSX El Capitan如何校验与修复磁盘权限]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-verify-and-repair-permissions-in-osx-el-capitan/" />
+  <id>http://localhost:4000/how-to-verify-and-repair-permissions-in-osx-el-capitan</id>
+  <updated>2016-02-22 12:34:06 +0800T00:00:00-00:00</updated>
+  <published>2016-02-22T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;section&quot;&gt;修复校验磁盘权限&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo /usr/libexec/repair_packages --verify --standard-pkgs /&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;这里修复校验的是/目录下，如果要修复其它磁盘，需要指明Volume参数，如下面例子&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;修复磁盘权限&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo /usr/libexec/repair_packages --repair --standard-pkgs --volume /&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-verify-and-repair-permissions-in-osx-el-capitan/&quot;&gt;OSX El Capitan如何校验与修复磁盘权限&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 22, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[El Capitan是什么意思]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/what-is-el-capitan/" />
+  <id>http://localhost:4000/what-is-el-capitan</id>
+  <updated>2016-02-20 16:33:45 +0800T00:00:00-00:00</updated>
+  <published>2016-02-20T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;一直好奇苹果为什么用El Capitan作为产品代号，它又是什么意思呢？查了下维基百科，“El Capitan”（西班牙语，意思是The Captain, The Chief）名称取自美国加州优胜美地国家公园内的一块巨岩。上一个版本的OSX产品代码是Yosemite，似乎这次的El Capitan是想和上一个产品代码扯上关系。&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/what-is-el-capitan/&quot;&gt;El Capitan是什么意思&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 20, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[OSX文件夹小技巧]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/tips-on-osx-folder/" />
+  <id>http://localhost:4000/tips-on-osx-folder</id>
+  <updated>2016-02-20 11:41:35 +0800T00:00:00-00:00</updated>
+  <published>2016-02-20T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;section&quot;&gt;如何让文件夹名称支持本地化&lt;/h2&gt;
+
+&lt;p&gt;在中文系统上，用Finder看到的系统文件夹名称（例如：桌面、文稿、下载等）是中文，但是在终端中用命令行操作时，却看到的是这些文件夹的英文（例如：Desktop、Documents、Downloads等）。一般用户怎样使用这个特性呢？例如：我有个文件夹叫Cloud，但是我想在Finder中显示个更霸气的名字，例如：智慧云！方法很简单：&lt;/p&gt;
+
+&lt;p&gt;把文件名改成Cloud.localized，然后进入，再创建个文件夹.localized，再进入，创建个文件zh.strings。此文件内容为：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cloud&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;智慧云&quot;&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;当然，你可能也触类旁通想到了，由于我用的是中文简体系统所以创建的文件名为zh.strings，如果用其它语言当然是：en.strings, jp.strings等等了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;如何更换文件夹图标&lt;/h2&gt;
+
+&lt;p&gt;有了霸气的图标，一定要给文件夹换个霸气的图标！OSX上换图标和其它系统都不一样，她的换图标方式可以用“简单、粗暴、美”来形容。如何做呢？&lt;/p&gt;
+
+&lt;p&gt;右键点击文件夹，在右键菜单中选择“显示简介”，注意打开窗体的左上方的图标，如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/info.png&quot; alt=&quot;显示简介&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接下来看你的需求了：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果你想用其它文件夹的图标，那么用上述步骤点选图标，按cmd+c复制，然后用上述步骤操作要换图标文件夹，点选图标按cmd+v即可。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果你在网上找个图标，也容易，用google搜图片，最后在关键字中加个”icon”以提高精度，找到图标后在浏览器上点选图标，按cmd+c复制，然后用上述步骤操作要换图标文件夹，点选图标按cmd+v即可。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/tips-on-osx-folder/&quot;&gt;OSX文件夹小技巧&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 20, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何使用自定义的按键影射功能]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-mapping-keys-on-ps2/" />
+  <id>http://localhost:4000/how-to-mapping-keys-on-ps2</id>
+  <updated>2016-02-20 15:14:02 +0800T00:00:00-00:00</updated>
+  <published>2016-02-20T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;ps2-or-acpi&quot;&gt;PS/2 or ACPI&lt;/h2&gt;
+
+&lt;p&gt;下载 &lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-ioio/downloads&quot;&gt;OS-X-ioio&lt;/a&gt;，执行：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ioio -s ApplePS2Keyboard LogScanCodes 1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;按下功能键（例如：F1），用控制台应用查看system.log看看是否有如下日志输出，如果有，说明功能键受PS/2控制，可以继续下去。例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Feb 20 17:32:15 gniu-z30 kernel[0]: ApplePS2Keyboard: sending key &lt;span class=&quot;nv&quot;&gt;3b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;90 down&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;按下每个功能键，记录下每个功能键的PS/2扫描码，例如：我的Z30-B上的是：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;F1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3c
+&lt;span class=&quot;nv&quot;&gt;F2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3b
+&lt;span class=&quot;nv&quot;&gt;F3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3d
+&lt;span class=&quot;nv&quot;&gt;F4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3e
+&lt;span class=&quot;nv&quot;&gt;F7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;41
+&lt;span class=&quot;nv&quot;&gt;F8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;42
+&lt;span class=&quot;nv&quot;&gt;F9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;43
+&lt;span class=&quot;nv&quot;&gt;F10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;44
+&lt;span class=&quot;nv&quot;&gt;F11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;57
+&lt;span class=&quot;nv&quot;&gt;F12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;58&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;查找映射码&lt;/h2&gt;
+
+&lt;p&gt;查看&lt;a href=&quot;/upload/download/ApplePS2ToADBMap.h.zip&quot;&gt;ApplePS2ToADBMap.h&lt;/a&gt;文件，注意映射关系：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;ADB码   PS/2扫描码  按键
+&lt;span class=&quot;o&quot;&gt;========================&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+......
+0x7a,   // 3b  F1
+0x78,   // 3c  F2
+0x63,   // 3d  F3
+0x76,   // 3e  F4
+0x60,   // 3f  F5
+0x61,   // 40  F6
+0x62,   // 41  F7
+0x64,   // 42  F8
+0x65,   // 43  F9
+0x6d,   // 44  F10
+......
+0x4a,   // e0 20  Mute &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;hp Fn+F7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+DEADKEY,// e0 21  Calculator
+0x34,   // e0 22  Play/Pause &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;hp Fn+F11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;注意：有些键是有扩展码的，前面都有个e0。
+根据你的需求，将PS扫描码或ADB码映射到按键功能，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# ADB映射&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;3b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;90;F2_brightness_down
+&lt;span class=&quot;nv&quot;&gt;3c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;91;F1_brightness_up
+
+&lt;span class=&quot;c&quot;&gt;# PS/2映射&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;44&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e020;F10_mute
+&lt;span class=&quot;nv&quot;&gt;57&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e02e;F11_volume_down
+&lt;span class=&quot;nv&quot;&gt;58&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e030;F12_volume_up
+&lt;span class=&quot;nv&quot;&gt;3e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e009;F4_launchpad
+&lt;span class=&quot;nv&quot;&gt;3d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e00a;F3_mission_control
+&lt;span class=&quot;nv&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e022;F8_play_pause
+&lt;span class=&quot;nv&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e010;F7_previous_track
+&lt;span class=&quot;nv&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;e019;F9_next_track&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;注：”;”后面是描述，根据具体情况填写&lt;/p&gt;
+
+&lt;h2 id=&quot;voodoops2controllerkext&quot;&gt;修改VoodooPS2Controller.kext&lt;/h2&gt;
+
+&lt;p&gt;用文本编辑器打开：&lt;/p&gt;
+
+&lt;p&gt;VoodooPS2Controller.kext-&amp;gt;Contents-&amp;gt;Plugins-&amp;gt;VoodooPS2Keyboard.kext-&amp;gt;Contents-&amp;gt;Info.plist&lt;/p&gt;
+
+&lt;p&gt;找到IOKitPersonalities-&amp;gt;ApplePS2Keyboard-&amp;gt;Platform Profile-&amp;gt;Default-&amp;gt;Custom PS2 Map/Custom ADB Map，根据上面找出的映射关系填写，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Custom ADB Map&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;array&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;3c=91;F1_brightness_up&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;3b=90;F2_brightness_down&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;;Items must be strings in the form of scanfrom=adbto (in hex)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/array&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Custom PS2 Map&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;array&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;43=e019;F9_next_track&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;41=e010;F7_previous_track&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;42=e022;F8_play_pause&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;3d=e00a;F3_mission_control&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;3e=e009;F4_launchpad&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;58=e030;F12_volume_up&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;57=e02e;F11_volume_down&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;44=e020;F10_mute&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;;Items must be strings in the form of scanfrom=scanto (in hex)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;e027=0;disable discrete fnkeys toggle&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;e028=0;disable discrete trackpad toggle&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/array&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;voodoops2controllerkext-1&quot;&gt;重新安装VoodooPS2Controller.kext，重启生效&lt;/h2&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-mapping-keys-on-ps2/&quot;&gt;如何使用自定义的按键影射功能&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 20, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[关于Clover快速启动参数问题的解决]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/clover-fast-boot/" />
+  <id>http://localhost:4000/clover-fast-boot</id>
+  <updated>2016-02-16 19:33:35 +0800T00:00:00-00:00</updated>
+  <published>2016-02-16T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;每次启动电脑时都要在Clover启动界面回车才能进入系统，这很麻烦，我想直接进入系统，如白苹果那样。用Clover Configurator打开config.plist，其中Boot-&amp;gt;Fast选项可以实现这个功能。但是我选中此项后还是会显示Clover启动菜单，所不同的是这个启动菜单没有主题，而是一个亮蓝色背景，上面有两个黑色礼帽（上面还有苹果图标）代表的启动项。后来试了几次才搞明白，要想使用这个选项，必须填写此选项上面的“Default Boot Volume”字段。这个字段可以输入磁盘的UUID，当然，更简单的方法是填写磁盘名，例如，在我的电脑上磁盘名是：Hackintosh HD。重启，完美直接启动了！&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/clover-fast-boot/&quot;&gt;关于Clover快速启动参数问题的解决&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 16, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何在OSX平台上制作Oracle Linux USB安装盘]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-create-oracle-linux-usb-installer/" />
+  <id>http://localhost:4000/how-to-create-oracle-linux-usb-installer</id>
+  <updated>2016-02-15 12:28:16 +0800T00:00:00-00:00</updated>
+  <published>2016-02-15T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;oracle-linux-iso&quot;&gt;准备Oracle Linux ISO安装介制&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在Oracle官方网站下载: &lt;a href=&quot;https://edelivery.oracle.com&quot;&gt;eDelivery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;我找到了一个更方便的下载网站：&lt;a href=&quot;http://mirrors.dotsrc.org/oracle-linux/OL7/u2/x86_64/&quot;&gt;http://mirrors.dotsrc.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;制作安装盘&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;确定U盘的磁盘号&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;diskutil list &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;退出U盘挂载&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;通过上面的命令可以确定，我的U盘是/dev/disk1，输入以下命令：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;diskutil unmountDisk /dev/disk1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;写入镜像到U盘：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;命令制式：dd if=iso_file_name of=usb_device bs=bytes，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo dd &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;./full_image.iso &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sdb &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;512k&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;注意事项&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;我用的是T440P，原来启动类型为UEFI Only，这个不行，改成Both后可以正常进入安装界面了&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果报错：“mboot.c32: Not a com32r image”，说明你的USB安装盘插在了USB3口上，换成USB2口既可&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-create-oracle-linux-usb-installer/&quot;&gt;如何在OSX平台上制作Oracle Linux USB安装盘&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 15, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[为什么苹果原装耳机不能在我的黑苹果上使用]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/headset-stadnards/" />
+  <id>http://localhost:4000/headset-stadnards</id>
+  <updated>2016-02-13 20:12:45 +0800T00:00:00-00:00</updated>
+  <published>2016-02-13T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;我的苹果原装耳机插到我的Toshiba Portege Z30-B上只能听到背景音乐，却不能听到人声。当然，这种情况以前也遇到过，但是没时间研究，这次趁着放假终于把这事儿搞明白了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;首先，我们要明白耳机的国标和美标的区分&lt;/h2&gt;
+
+&lt;p&gt;3.5mm耳机是分国标（OMTP）与美标（CTIA）两个标准的。其具体差异如图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/headset.jpg&quot; alt=&quot;耳机制式&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其实就是最后两节“地线”与“MIC”位置互换。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;其次，我们怎么判断国标与美标呢？&lt;/h2&gt;
+
+&lt;p&gt;如果把国际标准(CTIA)的耳机接到这个非国际标准(OMTP)的接口上，就会出现只有背景声，按住线控上的通话键才正常出现人声的现象。一般来说，美标的耳机上面3个环是白色的，而国标的是黑色的（我的就是国标）。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;接下来，哪些手机品牌的原装耳机是国标，哪些是美标的呢？&lt;/h2&gt;
+
+&lt;p&gt;美标（CTIA）：也是目前市场上最流行、使用量最大的接法。美标耳机适用手机范围：苹果(全系列)、小米(全系列)、魅族(全系列)、索尼(全系列)、LG(全系列)、HTC官方产品、三星(咨询客服)、摩托罗拉部分机型(ME865)、诺基亚Lumia和WP7系列、华为(C8812/U9200)、亿通T900等&lt;/p&gt;
+
+&lt;p&gt;国标（OMTP）：国标适用手机范围：诺基亚、索尼爱立信(全系列)、中兴(全系列)、步步高(全系列)、酷派(全系列)、HTC 非官方产品(A3380、A3360、T9188、A9188、Z510D)、三星旧产品(i8910、M3510C、M7500、F278、F700、F408、F490、G810、G818、G818E、i550W、8510、i560、S8000C、i8000、M2710C、i7500U、i9000、i6500U、F809、i8000、F859)、摩托罗拉XT531、OPPO(全系列)等国产系列手机。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;最后，我们的解决方案是什么？&lt;/h2&gt;
+
+&lt;p&gt;市面上很多大的独立品牌耳机是可以自适应的，所以，使用这种耳机你根本不会察觉有任何问题。如果你象我一样用的品牌手机自带的耳机，就很可能遇到这个问题，最好按住线控上的通话键试一下，解决办法也简单，某宝上买个适配器即可，好点的也就几十块，便宜的不到十块还包邮。例如下面这个样子的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/headset_adapter.png&quot; alt=&quot;耳机适配器&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/headset-stadnards/&quot;&gt;为什么苹果原装耳机不能在我的黑苹果上使用&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 13, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何在窗体应用中打开隐藏文件或文件夹]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-open-hidden-folder-in-gui-apps/" />
+  <id>http://localhost:4000/how-to-open-hidden-folder-in-gui-apps</id>
+  <updated>2016-02-10 15:47:21 +0800T00:00:00-00:00</updated>
+  <published>2016-02-10T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;这是个困惑我很久的问题，虽然不是什么大问题，但是确实讨厌。比如：我将我的osx-command-line项目存放在~/.yekki目录下，我们知道如果文件或文件夹名子前面有”.”，则表示被隐藏，所以，如果我想用Sublime-Text应用打开时应无法看到他们。今天认真查了下，原来解决办法是:先点击“打开”，待文件选择窗体出现后按“shift+cmd+.”即可看到隐藏的文件与文件夹。&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-open-hidden-folder-in-gui-apps/&quot;&gt;如何在窗体应用中打开隐藏文件或文件夹&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 10, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何处理OSX.GenieoDropper.A病毒警告]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-handle-osx-dot-genieodropper-dot-a-virus-alarm/" />
+  <id>http://localhost:4000/how-to-handle-osx-dot-genieodropper-dot-a-virus-alarm</id>
+  <updated>2016-02-10 21:49:21 +0800T00:00:00-00:00</updated>
+  <published>2016-02-10T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;可能是新版本的OSX加强了安全保护，在打开www.macx.cn下载的破解程序时，会弹出一个警告框，报告说：它含有“OSX.GenieoDropper.A”恶意软件。解决办法是将破解程序复制下来，例如：复到到~/目录下，然后打开”终端”应用，输入：xattr -cr ,然后将复制的破解程序拖拽到“终端”上回车，再重新运行破解程序就可以正常打开了。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-handle-osx-dot-genieodropper-dot-a-virus-alarm/&quot;&gt;如何处理OSX.GenieoDropper.A病毒警告&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 10, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Toshiba Portege Z30-B 安装经验总结]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/summary-of-toshiba-portege-z30-b-installation/" />
+  <id>http://localhost:4000/summary-of-toshiba-portege-z30-b-installation</id>
+  <updated>2016-02-05 19:30:28 +0800T00:00:00-00:00</updated>
+  <published>2016-02-05T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;公司每两年更新一次电脑，这次，我没有选择Lenovo系列，而是选择了东芝的Z30-B。为啥选择东芝呢？一是Lenovo品质越来越差，我早已对其失望透顶;二是我现在成功黑苹果的都是Lenovo系列，这次想试试东芝系列。经过几天的努力，终于将其成功拿下！虽然整个过程还算顺利，但是也是意外频发，害得我熬了一夜，现在写篇总结，避免后人走弯路。&lt;/p&gt;
+
+&lt;p&gt;总得来说，这个机型最难搞得是其显卡HD5500（Broadwell核显）。我使用的方法是AAPL, ig-platform-id注入(参见：&lt;a href=&quot;https://www.firewolf.science/2015/04/framebuffer-data-extracted-from-appleintelbdwgraphicsframebuffer-binary/&quot;&gt;Framebuffer data extracted from AppleIntelBDWGraphicsFramebuffer binary&lt;/a&gt;）。但是，这里需要注意的是：苹果在AppleIntelBDWGraphicsFramebufferbinary里增加了最小被盗内存（minimum stolen memory），如果你的DVMT预置内存小于66MB，这将会导致五国或异常重启。台式机可以在BIOS自由调节DVMT预置内存。笔记本中BIOS默认DVMT内存为32MB，OEM厂商不提供修改的选项。解决这个问题的方法有两个：&lt;/p&gt;
+
+&lt;h2 id=&quot;clover-kextsdvmt&quot;&gt;方法一：通过Clover Kexts注入，修改DVMT断言验证，具体步骤：&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;设置SMBIOS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;SMBIOS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;ProductName-Comment&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Using Haswell MacBookAir6,2 until Clover has support for Broadwell identifiers&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;ProductName&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;MacBookAir6,2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Trust&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ig-platform-id注入&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;ig-platform-id&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;0x16260006&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AppleIntelBDWGraphicsFramebuffer.kext 注入&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Comment&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta ( (based on Austere.J patch)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Disabled&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;false/&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Find&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+	QTnEdj4=
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;AppleIntelBDWGraphicsFramebuffer&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Replace&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+	QTnE6z4=
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;biosdvmt&quot;&gt;方法二：修改BIOS，增加DVMT值&lt;/h2&gt;
+
+&lt;p&gt;我没有试这种方法，实在是太麻烦，更何况修改BIOS是件很危险的事情，搞不好就变砖了。当然，如果有实力，这种方法也是最解决问题的！具体步骤参见：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.tonymacx86.com/yosemite-laptop-support/162062-guide-intel-hd-graphics-5500-os-x-yosemite-10-10-3-a.html&quot;&gt;[GUIDE] Intel HD Graphics 5500 on OS X Yosemite 10.10.3&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;注意事项&lt;/h2&gt;
+
+&lt;p&gt;在整个过程中，我还是犯了以下错误，以后要尽量避免：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;config.plist 中忘了添加 SortedOrder 相关条目&lt;/li&gt;
+  &lt;li&gt;如果包含了所有SSDTs，不要打system_PNOT补丁&lt;/li&gt;
+  &lt;li&gt;只有在USB3工作不正常时才需要加入GenericUSBXHCI.kext&lt;/li&gt;
+  &lt;li&gt;打补丁misc_Lid_PRW，避免“睡眠快醒”现象&lt;/li&gt;
+  &lt;li&gt;外接WIFI会影响电脑睡眠&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;处理突发问题&lt;/h2&gt;
+
+&lt;p&gt;本来安装好后基本完美了，然后想调试下ALPS多点触控功能，于是，把相关Kext放在了/Library/Extensions目录下了，然后就再也进不去了（中间过程中，我用了KCPM Utility Pro 3.3修复权限，此软件用了很长时间，我中途手工中止又重试，所以，我也搞不懂到底是哪个步骤出了问题）。我甚至想用USB启动重装系统，但是还是无法进入系统。后来，我试着在Clover启动界面中手工将ig-platform-id值改为0x16260001，这下倒是进去了，但是显存只有4M了，基本无法使用。我试着重装了一下，然后将系统升级到10.11.3，然后重新修复权限，将ig-platform-id重新改回0x16260006，然后就正常了，显存为1536M。问题虽然解决了，但是有点莫名其妙！&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;还不完善的地方&lt;/h2&gt;
+&lt;p&gt;相对来讲，此型号笔记本不太适合黑苹果，有些问题是无法绕过的，问题如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内置Intel 7265NGW（NGFF接口，似乎苹果产品从未使用过此接口，所以找不到合适的卡替换）无解&lt;/li&gt;
+  &lt;li&gt;ALPS触摸板多指触摸功能还未调试成功&lt;/li&gt;
+  &lt;li&gt;SD读卡器无解（这个基本不怎么用，所以也没认真研究）&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/summary-of-toshiba-portege-z30-b-installation/&quot;&gt;Toshiba Portege Z30-B 安装经验总结&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on February 05, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[借助CloverGrowerPro编译Clover如何设置代理]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/build-clover-behind-http-proxy/" />
+  <id>http://localhost:4000/build-clover-behind-http-proxy</id>
+  <updated>2016-01-20 14:04:49 +0800T00:00:00-00:00</updated>
+  <published>2016-01-20T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;为了得到最新版本的Clover，我使用&lt;a href=&quot;https://github.com/yekki/CloverGrowerPro&quot;&gt;CloverGrowerPro&lt;/a&gt;从源码编译。由于Clover使用SVN管理源代码，而我们公司网络需要设置代理才能访问，因此，我不得不修改CloverGrowerPro以满足要求。具体步骤如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;修改~/.subversion/servers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;nn&quot;&gt;[global]&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;http-proxy-&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;yourproxyhost&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;http-proxy-&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;yourproxyport&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;....&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;修改CloverGrowerPro.sh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;由于使用HTTP代理，我们不得不把所有 “svn://” 改成 “https://”。这里，我们需要改写的是&lt;/p&gt;
+
+&lt;p&gt;将&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;py&quot;&gt;CLOVERSVNURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;svn://svn.code.sf.net/p/cloverefiboot/code&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;改为：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span class=&quot;py&quot;&gt;CLOVERSVNURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;https://svn.code.sf.net/p/cloverefiboot/code&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;另外，在函数installToolchain()，installGettext()，installNasm()中也有对于SVN的调用，我们需要做如下修改&lt;/p&gt;
+
+&lt;p&gt;将&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;svn &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt; --force &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$CLOVERSVNURL&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$srcDIR&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &amp;gt;/dev/null&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;改为：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;svn &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt; --config-option servers:global:http-proxy-host&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;yourproxyhost --config-option servers:global:http-proxy-port&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;yourproxyport --force &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$CLOVERSVNURL&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$srcDIR&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &amp;gt;/dev/null&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;当然，为了方便使用，你也可以定义个变量存放代理设置，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;PROXY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;--config-option servers:global:http-proxy-host=yourproxyhost --config-option servers:global:http-proxy-port=yourproxyport&quot;&lt;/span&gt;
+
+......
+
+svn &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PROXY&lt;/span&gt; --force &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$CLOVERSVNURL&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$srcDIR&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;/buildnasm.sh &amp;gt;/dev/null&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;另外，在运行 “./CloverGrowerPro.sh -s” 时，记得将svn改成https，例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;EDK2 svn url to use &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;svn://svn.code.sf.net/p/edk2/code/trunk/edk2]:https://svn.code.sf.net/p/edk2/code/trunk/edk2&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/build-clover-behind-http-proxy/&quot;&gt;借助CloverGrowerPro编译Clover如何设置代理&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 20, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何查看与清除NVRAM内容]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-view-and-clear-the-mac-nvram-contents/" />
+  <id>http://localhost:4000/how-to-view-and-clear-the-mac-nvram-contents</id>
+  <updated>2016-01-19 19:22:59 +0800T00:00:00-00:00</updated>
+  <published>2016-01-19T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;nvram&quot;&gt;查看NVRAM内容&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nvram -xp&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;参数-p 是查看，-x 是以XML格式查看&lt;/p&gt;
+
+&lt;h2 id=&quot;nvram-1&quot;&gt;删除NVRAM变量&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nvram -d &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;variable key name goes here&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nvram -d SystemAudioVolume&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;nvram-2&quot;&gt;清除所有NVRAM变量&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;nvram -c&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;重置NVRAM变量还有一个比较麻烦的办法是：重启电脑，并同时按下： Command+Option+P+R，听到两声电脑重启的声音后松开按键。&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-view-and-clear-the-mac-nvram-contents/&quot;&gt;如何查看与清除NVRAM内容&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 19, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[笔记本硬件基础知识]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/laptop-hardware-knowledge/" />
+  <id>http://localhost:4000/laptop-hardware-knowledge</id>
+  <updated>2016-01-17 09:01:20 +0800T00:00:00-00:00</updated>
+  <published>2016-01-17T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;BIOS（Basic Input/Output System，基本输入输出系统）在整个系统中的地位是非常重要的，它实现了底层硬件和上层操作系统的桥梁。比如你现在从光盘拷贝一个文件到硬盘，您只需知道“复制、粘贴”的指令就行了，您不必知道它具体是如何从光盘读取，然后如何写入硬盘。对于操作系统来说也只需要向BIOS发出指令即可，而不必知道光盘是如何读，硬盘是如何写的。BIOS构建了操作系统和底层硬件的桥梁。&lt;/p&gt;
+
+&lt;p&gt;EC（Embed Controller，嵌入式控制器）是一个16位单片机，它内部本身也有一定容量的Flash来存储EC的代码。EC在系统中的地位绝不次于南北桥，在系统开启的过程中，EC控制着绝大多数重要信号的时序。在笔记本中，EC是一直开着的，无论你是在开机或者是关机状态，除非你把电池和Adapter完全卸除。&lt;/p&gt;
+
+&lt;p&gt;在关机状态下，EC一直保持运行，并在等待用户的开机信息。而在开机后，EC更作为键盘控制器，充电指示灯以及风扇等设备的控制，它甚至控制着系统的待机、休眠等状态。&lt;/p&gt;
+
+&lt;p&gt;现在的EC有两种架构，即BIOS的FLASH通过X-BUS接到EC，然后EC通过LPC接到南桥，一般这种情况下EC的代码也是放在FLASH中的，也就是和BIOS共用一个FLASH。比较新的架构，EC和FLASH共同接到LPC总线上，一般它只使用EC内部的ROM。至于LPC总线，它是INTEL当初为了取代低速落后的X-BUS而推出的总线标准。&lt;/p&gt;
+
+&lt;p&gt;EC上一般都含有键盘控制器，所以也称KBC(Keyboard Controller)。&lt;/p&gt;
+
+&lt;p&gt;在系统关机的时候，只有RTC部分和EC部分在运行。RTC部分维持着计算机的时钟和CMOS设置信息，而EC则在等待用户按开机键。在检测到用户按开机键后，EC会通知整个系统把电源打开（这部分在最后详细介绍）。CPU被RESET后，会去读BIOS内一个特定地址内的指令（其实是一个跳转指令，这个地址是由CPU硬件设定的）。&lt;/p&gt;
+
+&lt;p&gt;这里开始分两种情况，对于第一种的结构：CPU发出的这个地址通过FSB到北桥，然后通过HUB-LINK到南桥，通过LPC到EC，再通过X-BUS一直到达BIOS。在CPU读到所发出的地址内的指令后，执行它被RESET后的第一个指令。在这个系统中，EC起到了桥接BIOS和南桥（或者说整个系统）的作用。
+对于第二种结构：在这地址南桥后，会直接通过LPC到BIOS，不需要EC的桥接。&lt;/p&gt;
+
+&lt;p&gt;这里需要说明的是，对于台式机而言，一般是不需要EC的。这里原因有很多：比如台式机本身的ATX电源就具有一定的智能功能，他已经能受操作系统控制来实现待机、休眠的状态；其次由于笔记本的键盘不能直接接到PS/2接口，而必须接到EC之上；还有就是笔记本有更多的小功能，比如充电指示灯、WIFI指示灯、Fn等很多特殊的功能，而且笔记本必须支持电池的冲放电等功能，而智能冲放电则需要EC的支持；另外，笔记本TFT屏幕的开关时序也必须由EC控制。这些原因导致了笔记本使用EC来做内部管理的必要性。&lt;/p&gt;
+
+&lt;p&gt;总体来说，EC和BIOS都处于机器的最底层。EC是一个单独的处理器，在开机前和开机过程中对整个系统起着全局的管理。而BIOS是在等EC把内部的物理环境初始化后才开始运行的。&lt;/p&gt;
+
+&lt;p&gt;在南桥上还有一个功能块就是电源管理单元（PM，Power Management）。&lt;/p&gt;
+
+&lt;p&gt;一般来说，他和EC来共同配合完成。这里包括从开机（power button）键按下后，启动，待机，休眠，关机的全部功能。还包括对背光亮度，声音等的控制等等。&lt;/p&gt;
+
+&lt;p&gt;至于现在Intel的Speed Step技术，也有部分功能是透过南桥来实现的（南桥发送SLP、STPCLK（sleep，Stop Clock）来实现睡眠、深睡眠等）。&lt;/p&gt;
+
+&lt;p&gt;在台式机上，我们常听到关于集成网卡这个说法。而对于笔记本来说，网卡一般都是集成在主板上的，进入PIII时代以后，就显有无内建网卡的机器了。对于笔记本网卡来说（不考虑PCMCIA的网卡哦），一般有两种接法。&lt;/p&gt;
+
+&lt;p&gt;首先我们把网卡分成两个部分。现在的LAN都属于802.3的协议。而这个协议的物理实现却并非那么简单，需要分成两个部分。一部分是MAC控制层（Media Access Controller 媒体接入控制器），作用是根据802.3协议来做运算（采用CSMA/CD算法），另一部分是物理连接层（PHY）作用是根据MAC的算法得出的处理结果，接收和发送数据。&lt;/p&gt;
+
+&lt;p&gt;首先我们谈第一种，走PCI总线的网卡。如果这样接的话跟台式机的网卡唯一的区别就是把台式机的PCI网卡直接做到主板上。这颗走PCI的网卡芯片内部整合了MAC和PHY功能。实际使用中，高档一些的笔记本会采用INTEL的网卡，低档一些的就会用REALTLK或者VIA的芯片。当然，INTEL网卡的传输效率确实也比较高。&lt;/p&gt;
+
+&lt;p&gt;第二种则是“真正集成”的网卡，MAC层部分被做到了南桥里面，然后需要用一个外围电路（PHY）来配合南桥里的MAC来实现网卡的功能。
+ 南桥内部的网卡MAC输出一组信号线（称为MII总线），连接PHY（上图中的Intel 82562ET），然后引出RX+-和TX+-两对差分线，透过Transformer来控制EMI，然后输出到RJ45接口即刻。这里的Transformer的结构跟USB的共模电感相似，作用也相似。上面的REALTLK8100C的那张图中，红色框内就是Transformer。经过Transformer的信号线必须以最短的距离接到RJ45接口上以减少干扰，所以它离和RJ45的距离是必须被严格控制的。&lt;/p&gt;
+
+&lt;p&gt;那么MAC地址是什么呢？MAC地址是区别网络设备的唯一物理标志，理论上，世界上任何一个网络设备的MAC应该都是不同的。
+对于走PCI总线的网卡，一般会在网卡上挂一个小小的的E2PROM来存储，里面烧有MAC地址以及一些厂商信息。而对于用PHY来连接的网卡，会把MAC地址信息放在挂在南桥上的E2PROM（因为网卡的MAC控制器在南桥）。而1394和网卡的构建形式差不多，也是由MAC控制器和PHY来构成。其原理和布线准则也和网卡类似。&lt;/p&gt;
+
+&lt;p&gt;PCI设备：PCMCIA, Mini PCI&lt;/p&gt;
+
+&lt;p&gt;1989年由200多家公司确立了PCMCIA(Personal Computer Memory Card International Association)标准，最初只是用来扩展内存，91年后随着I/O设备扩展需求，多种设备都被做成了PCMCIA接口，PCMCIA成为了笔记本最重要的扩展插槽。PCMCIA的成长史几乎是整个笔记本电脑产业的成长史。那PCMCIA到底是如何实现的呢？&lt;/p&gt;
+
+&lt;p&gt;实际上，PCMCIA的实现方法并不复杂，把南桥的PCI总线拉到PCMCIA控制器，然后从PCMCIA控制器就能输出Cardbus，接上标准的PCMCIA接口就可以了。&lt;/p&gt;
+
+&lt;p&gt;实际上在设计的时候，CardBus Controller的设计厂商都已经对其开发作好了一整套的外围电路，OEM厂商只需要简单的按标准电路做简单的修改即可（比如一些降低成本的动作）。一般来说，CardBus Controller有TI，RICHO，ENE等几家可以选择。&lt;/p&gt;
+
+&lt;p&gt;至于mini PCI则更加简单了，只需把南桥的PCI总线点到点的接到miniPCI的接口上即可。顺便说一句，mini PCI和台式机上的PCI的物理定义是一致的，不同的仅仅是插槽不一致而已。&lt;/p&gt;
+
+&lt;p&gt;待续……&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/laptop-hardware-knowledge/&quot;&gt;笔记本硬件基础知识&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 17, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Clover电源管理相关项解释]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/clover-power-management/" />
+  <id>http://localhost:4000/clover-power-management</id>
+  <updated>2016-01-12 12:47:01 +0800T00:00:00-00:00</updated>
+  <published>2016-01-12T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;cloverivysandyhaswell&quot;&gt;Clover中Ivy/Sandy/Haswell机型电源管理检查列表&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSDT.aml at EFI/Clover/ACPI/patched&lt;/li&gt;
+  &lt;li&gt;config.plist/KernelAndKextPatches/AsusAICPUPM=true (Haswell以前型号)&lt;/li&gt;
+  &lt;li&gt;config.plist/KernelAndKextPatches/KernelPm=true (Haswell及以后型号)&lt;/li&gt;
+  &lt;li&gt;config.plist/KernelAndKextPatches/KernelLapic=true (用于有Local APIC panic问题的机器)&lt;/li&gt;
+  &lt;li&gt;根据你的CPU找到合适的系统定义，即：SMBIOS (config.plist/SMBIOS)&lt;/li&gt;
+  &lt;li&gt;没有使用老版本AppleACPIPlatform.kext&lt;/li&gt;
+  &lt;li&gt;没有使用NullCPUPowerManagement.kext&lt;/li&gt;
+  &lt;li&gt;处理器对象在DSDT中的Scope (_SB) or Scope (_PR)中定义in DSDT (一般很少在OEM DSDT找不到定义)&lt;/li&gt;
+  &lt;li&gt;校验生成的SSDT注入到DSDT相同的Scope（通常为_PR）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;drop-oem&quot;&gt;关于Drop OEM&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;SSDT可以借助Clover的Generate PStates与Generate CStates等选项生成，但是DSDT不可以生成，尽管BIOS提供一个&lt;/li&gt;
+  &lt;li&gt;被放置在/EFI/CLOVER/ACPI/patched目录下的SSDTs将被添加到OEM/BIOS提供的SSDTs&lt;/li&gt;
+  &lt;li&gt;被放置在/EFI/CLOVER/ACPI/patched目录下的DSDT将替换OEM/BIOS提供的DSDT&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ssdts&quot;&gt;由于SSDTs是追加模式，因此，可能存在冲突。解决方法有两个：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完全忽略OEM/BIOS提供的SSDTs，即：M打开Clover的Acpi/SSDT/Drop OEM&lt;/li&gt;
+  &lt;li&gt;删除部分OEM/BIOS提供的SSDT表，即：打开Clover的Acpi/Drop Tables中的项目，例如：删除DMAR，避免在BIOS中关闭VT-D功能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;drop-oem-1&quot;&gt;何时需要使用Drop OEM？&lt;/h3&gt;
+&lt;p&gt;对于一些老机型，例如：Sandy Bridge或更老的机型，通常需要使用Drop OEM，并且使用Generate PStates与Generate CStates来生成可变频SSDT。
+但是对于现在的主流机型，如：Broadwell/Haswell/Ivy，通常无需Drop OEM就可以正常工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;电源管理测试&lt;/h2&gt;
+
+&lt;p&gt;10.11以后，很多过去可以用的软件不再能用，例如：DCPIManager.app。现在通常使用AppleIntelInfo.kext来测试电源管理是否生效。&lt;/p&gt;
+
+&lt;p&gt;下载并编译（至少是Xcode 7.0 Beta）&lt;a href=&quot;https://github.com/Piker-Alpha/AppleIntelInfo&quot;&gt;AppleIntelInfo.kext&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;设置权限与所有者AppleIntelInfo.kext&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo chown -R root:wheel AppleIntelInfo.kext
+sudo chmod -R 744 AppleIntelInfo.kext&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;加载AppleIntelInfo.kext&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo kextload/kextutil AppleIntelInfo.kext&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;卸载AppleIntelInfo.kext&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo kextunload AppleIntelInfo.kext&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;查看测试结果&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo cat /tmp/AppleIntelInfo.dat&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/clover-power-management/&quot;&gt;Clover电源管理相关项解释&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 12, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[OSX El Capitan中如何修复启动花屏]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/resolve-boot-screen-garble-in-el-capitan/" />
+  <id>http://localhost:4000/resolve-boot-screen-garble-in-el-capitan</id>
+  <updated>2016-01-10 11:50:11 +0800T00:00:00-00:00</updated>
+  <published>2016-01-10T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;config.plist:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;KextsToPatch&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;array&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Comment&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Boot graphics glitch, (credit lisai9093, cecekpawon)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Disabled&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Find&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;AQAAdRc=&lt;span class=&quot;nt&quot;&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;IOGraphicsFamily&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;Replace&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;data&amp;gt;&lt;/span&gt;AQAA6xc=&lt;span class=&quot;nt&quot;&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/array&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;注：开启CSM或legacy boot (continue to boot UEFI)效果更佳&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/resolve-boot-screen-garble-in-el-capitan/&quot;&gt;OSX El Capitan中如何修复启动花屏&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 10, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Lenovo x220 安装EI Capitan与Clover]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/guide-for-install-osx-10-dot-11-on-x220-with-clover/" />
+  <id>http://localhost:4000/guide-for-install-osx-10-dot-11-on-x220-with-clover</id>
+  <updated>2016-01-10 15:05:34 +0800T00:00:00-00:00</updated>
+  <published>2016-01-10T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;注：本文只记录安装过程中的重点信息，并非Step by Step风格的安装向导。&lt;/p&gt;
+
+&lt;h2 id=&quot;bios&quot;&gt;BIOS设置&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“VT-d” 关闭，如果不能关闭则在config.plist设置dart=0&lt;/li&gt;
+  &lt;li&gt;“DEP” (data execution prevention) 打开&lt;/li&gt;
+  &lt;li&gt;“secure boot “ 关闭&lt;/li&gt;
+  &lt;li&gt;“legacy boot” 选UEFI Only或Both&lt;/li&gt;
+  &lt;li&gt;“fast boot” 关闭&lt;/li&gt;
+  &lt;li&gt;“CSM” 可选&lt;/li&gt;
+  &lt;li&gt;“boot from USB” or “boot from external” 打开&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usb&quot;&gt;USB安装盘准备&lt;/h2&gt;
+
+&lt;h3 id=&quot;u&quot;&gt;格式化U盘&lt;/h3&gt;
+
+&lt;p&gt;我使用的是GPT，格式化U盘命令（磁盘号通过”diskutil list”查看）：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;diskutil partitionDisk /dev/disk3 1 GPT HFS+J &lt;span class=&quot;s2&quot;&gt;&quot;install_osx&quot;&lt;/span&gt; R&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;clover&quot;&gt;安装Clover&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;选择 “仅安装UEFI开机版本”，”安装Clover到EFI系统区”将自动被选择&lt;/li&gt;
+  &lt;li&gt;选择 “Bluemac” 开机主题（我喜欢这个）&lt;/li&gt;
+  &lt;li&gt;在Drivers64UEFI中选择”OsxAptioFixDrv-64”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://github.com/JrCs/CloverGrowerPro/raw/master/Files/HFSPlus/X64/HFSPlus.efi&quot;&gt;HFSPlus.efi&lt;/a&gt;，将其放入此U盘的/EFI/CLOVER/drivers64UEFI目录中，删除此目录中的VboxHfs-64.efi&lt;/p&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://github.com/yekki/hackintosh-laptop/blob/master/repo/laptop/x220/solution/clover/config.plist&quot;&gt;config.plist&lt;/a&gt;，替换U盘/EFI/CLOVER/目录下的config.plist&lt;/p&gt;
+
+&lt;h3 id=&quot;kexts&quot;&gt;安装必要的Kexts&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RehabMan/OS-X-FakeSMC-kozlek&quot;&gt;FakeSMC.kext&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller&quot;&gt;VoodooPS2Controller.kext&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.insanelymac.com/forum/topic/205771-appleintele1000ekext-for-108107106105/&quot;&gt;AppleIntelE1000e.kext&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;复制以上kexts到U盘/EFI/CLOVER/kexts/10.11目录中&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;制作安装盘&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo &lt;span class=&quot;s2&quot;&gt;&quot;/Applications/Install OS X El Capitan.app/Contents/Resources/createinstallmedia&quot;&lt;/span&gt; --volume  /Volumes/install_osx --applicationpath &lt;span class=&quot;s2&quot;&gt;&quot;/Applications/Install OS X El Capitan.app&quot;&lt;/span&gt; --nointeraction&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;ei-capitan&quot;&gt;安装EI Capitan&lt;/h2&gt;
+
+&lt;p&gt;安装过程和白苹果一样，此处略！安装完成后安装Clover，过程与选项同上，复制U盘中的config.plist及kexts到电脑硬盘的相应位置&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;安装后系统修复&lt;/h2&gt;
+
+&lt;h3 id=&quot;dsdtssdt&quot;&gt;DSDT/SSDT修复&lt;/h3&gt;
+
+&lt;p&gt;对于x220机型，有用的是DSDT、SSDT、SSDT-1三个文件。&lt;/p&gt;
+
+&lt;p&gt;SSDT借助&lt;a href=&quot;https://github.com/Piker-Alpha/ssdtPRGen.sh&quot;&gt;ssdtPRGen.sh&lt;/a&gt;获取，具体细节略。&lt;/p&gt;
+
+&lt;p&gt;以下DSDT补丁来源：https://github.com/RehabMan/Laptop-DSDT-Patch&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DSDT相关补丁&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;graphics_Rename-PCI0_VID,graphics_HD3K_low,battery_Lenovo-x220,usb_6-series,graphics_PNLF_ivy_sandy,system_ADP1,system_Mutex,system_IRQ,system_SMBUS, system_HPET,system_MCHC,system_IMEI,system_PNOT,system_OSYS_win8,audio_HDEF-layout3&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSDT-1相关补丁&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;graphics_Rename-PCI0_VID&lt;/p&gt;
+
+&lt;h3 id=&quot;wifi&quot;&gt;修复WIFI&lt;/h3&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://github.com/RehabMan/HP-ProBook-4x30s-DSDT-Patch/tree/master/kexts&quot;&gt;ProBookAtheros.kext&lt;/a&gt;，将放入硬盘的/EFI/CLOVER/kexts/10.11目录中。&lt;/p&gt;
+
+&lt;p&gt;注：由于x220原装WIFI卡不被黑苹果支持，所以我将其换成了AR9285卡，如果不想换笔记本内置卡，可以买个兼容的外接USB WIFI无线网卡。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;修复蓝牙&lt;/h3&gt;
+
+&lt;p&gt;编辑： IOBluetoothFamiliy.kext/Contents/Plugins/BroadcomBluetoothHostControllerUSBTransport.kext/Contents/Info.plist&lt;/p&gt;
+
+&lt;p&gt;查找：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;idProduct&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;integer&amp;gt;&lt;/span&gt;33292&lt;span class=&quot;nt&quot;&gt;&amp;lt;/integer&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;idVendor&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;integer&amp;gt;&lt;/span&gt;1452&lt;span class=&quot;nt&quot;&gt;&amp;lt;/integer&amp;gt;&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;替换为：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;idProduct&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;integer&amp;gt;&lt;/span&gt;8575&lt;span class=&quot;nt&quot;&gt;&amp;lt;/integer&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;idVendor&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;integer&amp;gt;&lt;/span&gt;2652&lt;span class=&quot;nt&quot;&gt;&amp;lt;/integer&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;修复权限与缓存&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;修复声卡&lt;/h3&gt;
+
+&lt;p&gt;删除/S/L/E目录下的AppleHDA，替换为&lt;a href=&quot;https://github.com/Mirone/AppleHDA_10.11/blob/master/Laptop&#39;s/AppleHDA-272.50-CX20590.zip&quot;&gt;AppleHDA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;修复权限与缓存&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;修复背光&lt;/h3&gt;
+
+&lt;p&gt;安装&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-intel-backlight/downloads&quot;&gt;IntelBacklight.kext&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;放在/Library/Extensions或/EFI/CLOVER/kexts/10.11&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;修复电源管理&lt;/h3&gt;
+
+&lt;p&gt;安装&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads&quot;&gt;ACPIBatteryManager.kext&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;放在/Library/Extensions或/EFI/CLOVER/kexts/10.11&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;其它&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;关闭休眠模式&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo pmset -a hibernatemode 0
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -e /private/var/vm/sleepimage &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then &lt;/span&gt;sudo rm /private/var/vm/sleepimage;fi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;忽略固件升级&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo softwareupdate --ignore MacBookProEFIUpdate2.7&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;注：本文将持续更新&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/guide-for-install-osx-10-dot-11-on-x220-with-clover/&quot;&gt;Lenovo x220 安装EI Capitan与Clover&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 10, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Apple SIP简介及在Clover中如何控制]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/" />
+  <id>http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover</id>
+  <updated>2016-01-10 10:16:21 +0800T00:00:00-00:00</updated>
+  <published>2016-01-10T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h2 id=&quot;apple-sip&quot;&gt;什么是Apple SIP&lt;/h2&gt;
+&lt;p&gt;Apple SIP（System Integrity Protection）机制是OSX 10.11开始启用的一套关键的安全保护技术体系。
+SIP技术的整个体系主要分为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文件系统保护（Filesystem protection）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;对于系统文件通过沙盒限制root权限，比如：就算你有root根限，也无法往/usr/bin目录写入。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;运行时保护（Runtime protection）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;受保护的关键系统进程在运行状态下无法被代码注入，挂调试器调试，以及限制内核调试等&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内核扩展签名（Kext signing）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;10.10中强制要求签名，要想绕过这个限制，就必需加入启动参数“kext-dev-mode=1”（10.11 DB5开始，”rootless=0”的启动参数也被废除了），这个启动参数在10.11中被废除。另外，10.11官方要求第三方kext必须被安装至/Library/Extensions。&lt;/p&gt;
+
+&lt;h2 id=&quot;applesip&quot;&gt;Apple官方如何对SIP保护技术进行配置&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;进入10.11的安装程序或Recovery HD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;使用其中所带的终端进行相关操作。在此环境下，由于特殊启动标志位的存在，整个SIP保护技术处在完全关闭状态。可正常修改受保护文件的权限以及所有者。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Apple已经提供了csrutil程序来配置SIP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;此程序在正常系统环境下只支持检查当前SIP开关状态，若需要开关或调整SIP状态必须前往Recovery或安装程序中执行。
+注意：该工具修改SIP配置的功能仅在部分原生支持NVRAM写入的机子上有效。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;csrutil命令行工具使用方法：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完全启用SIP(csr-active-config=0x10)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil &lt;span class=&quot;nb&quot;&gt;enable&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;也可以添加更多参数实现按需开关各项保护技术&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil &lt;span class=&quot;nb&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;--without kext|fs|debug|dtrace|nvram] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;--no-internal]&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;禁用SIP(csr-active-config=0x77)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil disable&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;等效命令：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil &lt;span class=&quot;nb&quot;&gt;enable&lt;/span&gt; --without kext --without fs --without debug --without dtrace --without nvram&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;清除SIP标志位（将csr-active-config项从NVRAM中移除，等同于SIP完全开启）：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil clear&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;检查并报告当前SIP开关详细状态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;csrutil status&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;sip&quot;&gt;其它可以控制SIP方法&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;借助Clover（版本&amp;gt;=3250）实现SIP控制&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;RtVariables&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;CsrActiveConfig&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;0x13&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;BooterConfig&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;0x49&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;借助第三方应用（例如：SIPUtility.app）
+这类应用一般需要在Recovery环境下使用，并且要求原生支持NVRAM写入，尽量避免使用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;直接写入NVRAM&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82:csr-active-config&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;%13%00%00%00&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;sip-1&quot;&gt;SIP自定义配置及各标志位的含义&lt;/h2&gt;
+
+&lt;p&gt;举例：csr-active-config=0x13，0x13 = 0b00010011&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;____ ___1 (bit 0): [kext] 允许加载不受信任的kext（与已被废除的kext-dev-mode=1等效）
+____ __1_ (bit 1): [fs] 解锁文件系统限制
+____ _1__ (bit 2): [debug] 允许task_for_pid()调用
+____ 1___ (bit 3): [n/a] 允许内核调试 （官方的csrutil工具无法设置此位）
+___1 ____ (bit 4): [internal] Apple内部保留位（csrutil默认会设置此位，实际不会起作用。设置与否均可）
+__1_ ____ (bit 5): [dtrace] 解锁dtrace限制
+_1__ ____ (bit 6): [nvram] 解锁NVRAM限制
+1___ ____ (bit 7): [n/a] 允许设备配置，用于Recovery/安装环境&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;更多示例及建议值：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clover(需要修改原版kext但未使用kextpatch)，建议仅解锁kext加载和文件系统限制：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;csr-active-config=0x13或0x3(csrutil enable –without kext –without fs [–no-internal])&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clover(已正确配置kextpatch对原版kext进行修改)，建议仅解锁kext加载限制以加载第三方未签名kext：
+csr-active-config=0x11或0x1 (csrutil enable –without kext [–no-internal])&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clover(愿意依赖Kext注入功能+已正确配置kextpatch对原版kext进行修改)，可完全开启SIP：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;csr-active-config=0x10或0x0 (csrutil enable [–no-internal] 或 curutil clear)&lt;/p&gt;
+
+&lt;p&gt;注：部分kext无法通过Clover的kext注入来正常工作，例如AppleHDA Injector，CodecCommander.kext等。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关闭SIP中的所有防护，不推荐：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;csr-active-config=0xff
+在非必要的情况下，不要把提供的这些保护全部关闭，也尽量避免使用Clover默认注入的0x67参数。&lt;/p&gt;
+
+&lt;p&gt;至于系统启动标志位，即Clover的config.plist中BooterConfig的含义：&lt;/p&gt;
+
+&lt;p&gt;举例：BooterConfig=0x49, 0x0049 = 0b001001001&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;_ ____ ___1 (bit 0): RebootOnPanic，遇到内核崩溃自动重启
+_ ____ __1_ (bit 1): HiDPI，在启动过程中使用HiDPI模式显示
+_ ____ _1__ (bit 2): Black，在启动过程中不显示进度条
+_ ____ 1___ (bit 3): CSRActiveConfig，将读取当前生效的SIP控制标志位
+_ ___1 ____ (bit 4): CSRConfigMode，仅用于Recovery/安装环境，将允许对SIP进行配置
+_ __1_ ____ (bit 5): CSRBoot，仅用于Recovery/安装环境，SIP将完全禁用
+_ _1__ ____ (bit 6): BlackBg，在启动过程中使用黑色背景
+_ 1___ ____ (bit 7): LoginUI，在启动过程中使用登陆界面作为背景
+1 ____ ____ (bit 8): InstallUI&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;把需要的打开的启动标志位设置为1即可。BooterConfig设置为Clover自有设置，可能需要机器支持原生NVRAM读写方可生效。如无特殊需要建议可以不在config.plist中添加此项，等待Clover的后续更新。&lt;/p&gt;
+
+&lt;h2 id=&quot;sipkext&quot;&gt;SIP对于kext修改及安装的影响&lt;/h2&gt;
+&lt;p&gt;这方面的影响主要体现在强制kext签名以及文件系统保护2个方面：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;kext签名保护：由于10.10中可用的kext-dev-mode=1启动参数在10.11中已经废除，请参照上面配置SIP以关闭此项保护。
+Clover的kext注入功能可绕过kext签名保护从而强制加载第三方kext，但部分kext使用注入功能可能无法正常工作，例如AppleHDA Injector，CodecCommander.kext等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;文件系统保护：如不考虑安全性需求，也请参照上面配置SIP以关闭此项保护，关闭之后即可对任意系统文件进行修改，包括直接修改”/System/Library/Extensions”下的原版kext。
+如希望此项技术保持开启，则”/System/Library/Extensions”目录中的kext受到保护，无法直接进行修改。Apple要求第三方kext必须安装至”/Library/Extensions”，此目录并不在保护列表中，因此可在root权限下自由操作。若有需要对SLE下原版kext进行修改也可通过充分利用Clover Kextpatch/kext Injector等技术实现。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/&quot;&gt;Apple SIP简介及在Clover中如何控制&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 10, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何在OS X El Capitan系统中修复Intel USB端口]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-fix-intel-usb-ports-in-os-x-el-capitan/" />
+  <id>http://localhost:4000/how-to-fix-intel-usb-ports-in-os-x-el-capitan</id>
+  <updated>2016-01-05 20:49:55 +0800T00:00:00-00:00</updated>
+  <published>2016-01-05T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;EI Capitan 引入了依据SMBIOS信息限制USB端口的新机制，如果在不借助GenericUSBXHCI的前题下原来正常工作的USB端口在升级到10.11后不工作了，多半是由于此机制作怪。&lt;/p&gt;
+
+&lt;h2 id=&quot;usb-kexts&quot;&gt;加载USB Kexts&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;USB 2.0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;/System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/AppleUSBEHCIPCI.kext/Contents/Info.plist&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/ehci_info.png&quot; alt=&quot;EHCI Info&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;IONameMatch：用于匹配USB设备名，一般为EHC1 &amp;amp; EHC2。&lt;/li&gt;
+  &lt;li&gt;port-count：最大USB端口地址（此处命名不合理）&lt;/li&gt;
+  &lt;li&gt;port：USB端口地址&lt;/li&gt;
+  &lt;li&gt;UsbConnector：接口类型（0:USB2 type-A, 3:USB3 type-A, 255: proprietary）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如上图，对于iMac13，只有一个USB设备（EHC1），此USB设备只有一个USB端口，USB端口地址为1，类型为proprietary。如果DSDT中USB设备与SMBIOS定义的不同，那么USB端口就不会工作了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;USB 2.0 &amp;amp; USB 3.0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;/System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/AppleUSBXHCIPCI.kext/Contents/Info.plist&lt;/p&gt;
+
+&lt;p&gt;AppleUSBXHCIPCI与AppleUSBEHCIPCI略有不同，AppleUSBXHCIPCI主要是依据IOPCIPrimaryMatch，也就是说依据USB 3设备在DSDT中的设备号。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/xhci_info.png&quot; alt=&quot;XHCI Info&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usb&quot;&gt;USB端口限制&lt;/h2&gt;
+
+&lt;p&gt;USB如果要工作正常，要满足：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DSDT中USB设备名要与SMBIOS类型定义相同&lt;/li&gt;
+  &lt;li&gt;DSDT中USB端口数量小于等于SMBIOS中定义的端口数&lt;/li&gt;
+  &lt;li&gt;DSDT中USB端口地址与SMBIOS中定义的端口地址相同&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注：对于USB 3.0设备，如果DSDT中的名子不是XHC1，那么，缺省就没有USB端口限制，当然，如果工作不正常，这就需要恢复USB端口限制功能，手工添加端口限制。&lt;/p&gt;
+
+&lt;p&gt;例如：MacBookPro 9,2 可用USB端口地址为：1, 2, 5, 6：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/mac_pro92.png&quot; alt=&quot;MacBookPro92&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;usb-1&quot;&gt;方法一：移除USB端口限制&lt;/h3&gt;
+
+&lt;p&gt;对于 USB 3.0，你可以移除port-count与ports限制，或者干脆在DSDT中重命名USB设备名为XHC（任意名子，只要不是XHC1）。
+一些SMBIOS，例如：iMac14,x 对于USB 2.0并没有端口限制，所以，如果由于USB 2.0端口不正常，可以尝试这些SMBIOS。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/remove_ports.png&quot; alt=&quot;Remove Ports&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;usb-2&quot;&gt;方法二：扩展USB端口限制&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对于 USB 2.0，在DSDT中重命名USB设备名为EHC1/EHC2，或者直接改IONameMatch&lt;/li&gt;
+  &lt;li&gt;对于 USB 3.0, 在DSDT中重命名USB设备名为XHC1，或者更改IONameMatch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如：下面DSDT中XHC1端口地址为：1, 2, 3, 4&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/dsdt_xhc.png&quot; alt=&quot;XHC DSDT&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然而，SMBIOS MacBookPro9,2 定义的端口地址为：1, 2, 5, 6&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/mac_pro92.png&quot; alt=&quot;MacBookPro92&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;所以，需要手工添加端口地址：3, 4&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/upload/images/add_port.png&quot; alt=&quot;Add Port&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：USB端口总数不能超过15个&lt;/p&gt;
+
+&lt;h2 id=&quot;usb-kexts-1&quot;&gt;注入 USB Kexts&lt;/h2&gt;
+
+&lt;p&gt;为了避免升级造成的麻烦，我们可以使用驱动注入的方式实现USB修复。
+如果是EHCI，在DSDT中重命名EHC1/EHC2，例如：EH01/EH02，这样原生的Apple kexts中的端口限制就失效了，然后编写一个injector kext为EH01/EH02添加USB端口信息。&lt;/p&gt;
+
+&lt;p&gt;对于XHCI，同样修改DSDT中的设备名XHC1，例如：XHC，然后然后编写一个injector kext为EH01/EH02添加USB端口信息。&lt;/p&gt;
+
+&lt;p&gt;下载：&lt;a href=&quot;/upload/download/usb_Info.plist.zip&quot;&gt;Info.plist&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-fix-intel-usb-ports-in-os-x-el-capitan/&quot;&gt;如何在OS X El Capitan系统中修复Intel USB端口&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[如何在OSX上安装MAME模拟器]]></title>
+ <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-run-mame-emulator-on-osx/" />
+  <id>http://localhost:4000/how-to-run-mame-emulator-on-osx</id>
+  <updated>2016-01-02 10:34:23 +0800T00:00:00-00:00</updated>
+  <published>2016-01-02T00:00:00+08:00</published>
+  
+  <author>
+    <name>yekki</name>
+    <uri>http://localhost:4000</uri>
+    <email>gary.niu@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;我试用的是最新的 0.135版&lt;/p&gt;
+
+&lt;p&gt;下载地址：&lt;a href=&quot;http://mameosx.sourceforge.net/&quot;&gt;MAME OS X&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我的操作系统是 OSX EI Capitan 10.11.3 BETA，在运行游戏时出现黑屏的问题，经过查资料，解决方法如下：&lt;/p&gt;
+
+&lt;p&gt;打开Preferences，选择Video，Rendering Options -&amp;gt; Render frames using:选择[OpenGL]
+&lt;img src=&quot;/upload/images/mame_blackscreen.png&quot; alt=&quot;设置&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;显示游戏界面后，要先设置游戏手柄的设置，点击游戏屏幕，点击：Tab键，进入设置界面，根据菜单设置即可！&lt;/p&gt;
+
+&lt;p&gt;分享一下我最喜欢的游戏：&lt;a href=&quot;/upload/download/tokiob.zip&quot;&gt;Tokio&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-run-mame-emulator-on-osx/&quot;&gt;如何在OSX上安装MAME模拟器&lt;/a&gt; was originally published by yekki at &lt;a href=&quot;http://localhost:4000&quot;&gt;苹果园&lt;/a&gt; on January 02, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>

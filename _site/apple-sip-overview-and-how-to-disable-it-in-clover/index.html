@@ -1,0 +1,398 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Apple SIP简介及在Clover中如何控制 &#8211; 苹果园</title>
+<meta name="description" content="黑苹果、白苹果、果果香">
+<meta name="keywords" content="SIP, Clover, 安全, El Capitan, 黑苹果">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apple SIP简介及在Clover中如何控制">
+<meta property="og:description" content="黑苹果、白苹果、果果香">
+<meta property="og:url" content="http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/">
+<meta property="og:site_name" content="苹果园">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="苹果园 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<!--<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">-->
+<link href="//fonts.useso.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<!-- <script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>-->
+<script src="//cdn.bootcss.com/modernizr/2.6.2/modernizr.min.js"></script>
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">打开菜单</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000/">首页</a></li>
+		<li>
+			<a href="#">关于</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/avatar.png" alt="yekki photo" class="author-photo">
+					<h4>yekki</h4>
+					<p>苹果圈儿里中间件最厉害的，中间件圈儿里苹果技术最牛的！</p>
+				</li>
+				<li><a href="http://localhost:4000/about/"><span class="btn btn-inverse">了解更多</span></a></li>
+				<li>
+					<a href="mailto:gary.niu@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/yekki"><i class="fa fa-fw fa-twitter"></i> Weibo </a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="https://linkedin.com/in/yekki"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://github.com/yekki"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">文章</a>
+			<ul class="dl-submenu">
+				<li><a href="http://localhost:4000/posts/">所有文章</a></li>
+				<li><a href="http://localhost:4000/tags/">所有标签</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">主要项目</a>
+			<ul class="dl-submenu">
+				
+	    			
+	    			<li><a href="https://github.com/yekki/hackintosh-laptop-workbench" target="_blank">Hackintosh Laptop</a></li>
+	    		
+	    			
+	    			<li><a href="https://github.com/yekki/packer-oracle-linux" target="_blank">Packer for Oracle Linux</a></li>
+	    		
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/" rel="bookmark" title="Apple SIP简介及在Clover中如何控制">Apple SIP简介及在Clover中如何控制</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-01-10T00:00:00+08:00">January 10, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+阅读用时 ~1 分钟
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h2 id="apple-sip">什么是Apple SIP</h2>
+<p>Apple SIP（System Integrity Protection）机制是OSX 10.11开始启用的一套关键的安全保护技术体系。
+SIP技术的整个体系主要分为：</p>
+
+<ul>
+  <li>文件系统保护（Filesystem protection）</li>
+</ul>
+
+<p>对于系统文件通过沙盒限制root权限，比如：就算你有root根限，也无法往/usr/bin目录写入。</p>
+
+<ul>
+  <li>运行时保护（Runtime protection）</li>
+</ul>
+
+<p>受保护的关键系统进程在运行状态下无法被代码注入，挂调试器调试，以及限制内核调试等</p>
+
+<ul>
+  <li>内核扩展签名（Kext signing）</li>
+</ul>
+
+<p>10.10中强制要求签名，要想绕过这个限制，就必需加入启动参数“kext-dev-mode=1”（10.11 DB5开始，”rootless=0”的启动参数也被废除了），这个启动参数在10.11中被废除。另外，10.11官方要求第三方kext必须被安装至/Library/Extensions。</p>
+
+<h2 id="applesip">Apple官方如何对SIP保护技术进行配置</h2>
+
+<ul>
+  <li>进入10.11的安装程序或Recovery HD</li>
+</ul>
+
+<p>使用其中所带的终端进行相关操作。在此环境下，由于特殊启动标志位的存在，整个SIP保护技术处在完全关闭状态。可正常修改受保护文件的权限以及所有者。</p>
+
+<ul>
+  <li>Apple已经提供了csrutil程序来配置SIP</li>
+</ul>
+
+<p>此程序在正常系统环境下只支持检查当前SIP开关状态，若需要开关或调整SIP状态必须前往Recovery或安装程序中执行。
+注意：该工具修改SIP配置的功能仅在部分原生支持NVRAM写入的机子上有效。</p>
+
+<p><strong>csrutil命令行工具使用方法：</strong></p>
+
+<ul>
+  <li>完全启用SIP(csr-active-config=0x10)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil <span class="nb">enable</span></code></pre></figure>
+
+<ul>
+  <li>也可以添加更多参数实现按需开关各项保护技术</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil <span class="nb">enable</span> <span class="o">[</span>--without kext|fs|debug|dtrace|nvram] <span class="o">[</span>--no-internal]</code></pre></figure>
+
+<ul>
+  <li>禁用SIP(csr-active-config=0x77)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil disable</code></pre></figure>
+
+<p>等效命令：</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil <span class="nb">enable</span> --without kext --without fs --without debug --without dtrace --without nvram</code></pre></figure>
+
+<ul>
+  <li>清除SIP标志位（将csr-active-config项从NVRAM中移除，等同于SIP完全开启）：</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil clear</code></pre></figure>
+
+<ul>
+  <li>检查并报告当前SIP开关详细状态</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">csrutil status</code></pre></figure>
+
+<h2 id="sip">其它可以控制SIP方法</h2>
+
+<ul>
+  <li>借助Clover（版本&gt;=3250）实现SIP控制</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;key&gt;</span>RtVariables<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;dict&gt;</span>
+                <span class="nt">&lt;key&gt;</span>CsrActiveConfig<span class="nt">&lt;/key&gt;</span>
+                <span class="nt">&lt;string&gt;</span>0x13<span class="nt">&lt;/string&gt;</span>
+                <span class="nt">&lt;key&gt;</span>BooterConfig<span class="nt">&lt;/key&gt;</span>
+                <span class="nt">&lt;string&gt;</span>0x49<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;/dict&gt;</span></code></pre></figure>
+
+<ul>
+  <li>
+    <p>借助第三方应用（例如：SIPUtility.app）
+这类应用一般需要在Recovery环境下使用，并且要求原生支持NVRAM写入，尽量避免使用。</p>
+  </li>
+  <li>
+    <p>直接写入NVRAM</p>
+  </li>
+</ul>
+
+<p>例如：</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">sudo nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82:csr-active-config<span class="o">=</span>%13%00%00%00</code></pre></figure>
+
+<h2 id="sip-1">SIP自定义配置及各标志位的含义</h2>
+
+<p>举例：csr-active-config=0x13，0x13 = 0b00010011</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">____ ___1 (bit 0): [kext] 允许加载不受信任的kext（与已被废除的kext-dev-mode=1等效）
+____ __1_ (bit 1): [fs] 解锁文件系统限制
+____ _1__ (bit 2): [debug] 允许task_for_pid()调用
+____ 1___ (bit 3): [n/a] 允许内核调试 （官方的csrutil工具无法设置此位）
+___1 ____ (bit 4): [internal] Apple内部保留位（csrutil默认会设置此位，实际不会起作用。设置与否均可）
+__1_ ____ (bit 5): [dtrace] 解锁dtrace限制
+_1__ ____ (bit 6): [nvram] 解锁NVRAM限制
+1___ ____ (bit 7): [n/a] 允许设备配置，用于Recovery/安装环境</code></pre></figure>
+
+<p><strong>更多示例及建议值：</strong></p>
+
+<ul>
+  <li>Clover(需要修改原版kext但未使用kextpatch)，建议仅解锁kext加载和文件系统限制：</li>
+</ul>
+
+<p>csr-active-config=0x13或0x3(csrutil enable –without kext –without fs [–no-internal])</p>
+
+<ul>
+  <li>
+    <p>Clover(已正确配置kextpatch对原版kext进行修改)，建议仅解锁kext加载限制以加载第三方未签名kext：
+csr-active-config=0x11或0x1 (csrutil enable –without kext [–no-internal])</p>
+  </li>
+  <li>
+    <p>Clover(愿意依赖Kext注入功能+已正确配置kextpatch对原版kext进行修改)，可完全开启SIP：</p>
+  </li>
+</ul>
+
+<p>csr-active-config=0x10或0x0 (csrutil enable [–no-internal] 或 curutil clear)</p>
+
+<p>注：部分kext无法通过Clover的kext注入来正常工作，例如AppleHDA Injector，CodecCommander.kext等。</p>
+
+<ul>
+  <li>关闭SIP中的所有防护，不推荐：</li>
+</ul>
+
+<p>csr-active-config=0xff
+在非必要的情况下，不要把提供的这些保护全部关闭，也尽量避免使用Clover默认注入的0x67参数。</p>
+
+<p>至于系统启动标志位，即Clover的config.plist中BooterConfig的含义：</p>
+
+<p>举例：BooterConfig=0x49, 0x0049 = 0b001001001</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">_ ____ ___1 (bit 0): RebootOnPanic，遇到内核崩溃自动重启
+_ ____ __1_ (bit 1): HiDPI，在启动过程中使用HiDPI模式显示
+_ ____ _1__ (bit 2): Black，在启动过程中不显示进度条
+_ ____ 1___ (bit 3): CSRActiveConfig，将读取当前生效的SIP控制标志位
+_ ___1 ____ (bit 4): CSRConfigMode，仅用于Recovery/安装环境，将允许对SIP进行配置
+_ __1_ ____ (bit 5): CSRBoot，仅用于Recovery/安装环境，SIP将完全禁用
+_ _1__ ____ (bit 6): BlackBg，在启动过程中使用黑色背景
+_ 1___ ____ (bit 7): LoginUI，在启动过程中使用登陆界面作为背景
+1 ____ ____ (bit 8): InstallUI</code></pre></figure>
+
+<p>把需要的打开的启动标志位设置为1即可。BooterConfig设置为Clover自有设置，可能需要机器支持原生NVRAM读写方可生效。如无特殊需要建议可以不在config.plist中添加此项，等待Clover的后续更新。</p>
+
+<h2 id="sipkext">SIP对于kext修改及安装的影响</h2>
+<p>这方面的影响主要体现在强制kext签名以及文件系统保护2个方面：</p>
+
+<ul>
+  <li>
+    <p>kext签名保护：由于10.10中可用的kext-dev-mode=1启动参数在10.11中已经废除，请参照上面配置SIP以关闭此项保护。
+Clover的kext注入功能可绕过kext签名保护从而强制加载第三方kext，但部分kext使用注入功能可能无法正常工作，例如AppleHDA Injector，CodecCommander.kext等。</p>
+  </li>
+  <li>
+    <p>文件系统保护：如不考虑安全性需求，也请参照上面配置SIP以关闭此项保护，关闭之后即可对任意系统文件进行修改，包括直接修改”/System/Library/Extensions”下的原版kext。
+如希望此项技术保持开启，则”/System/Library/Extensions”目录中的kext受到保护，无法直接进行修改。Apple要求第三方kext必须安装至”/Library/Extensions”，此目录并不在保护列表中，因此可在root权限下自由操作。若有需要对SLE下原版kext进行修改也可通过充分利用Clover Kextpatch/kext Injector等技术实现。</p>
+  </li>
+</ul>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#SIP" title="Pages tagged SIP" class="tag"><span class="term">SIP</span></a><a href="http://localhost:4000/tags/#Clover" title="Pages tagged Clover" class="tag"><span class="term">Clover</span></a><a href="http://localhost:4000/tags/#安全" title="Pages tagged 安全" class="tag"><span class="term">安全</span></a><a href="http://localhost:4000/tags/#El Capitan" title="Pages tagged El Capitan" class="tag"><span class="term">El Capitan</span></a><a href="http://localhost:4000/tags/#黑苹果" title="Pages tagged 黑苹果" class="tag"><span class="term">黑苹果</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2016-01-10 10:16:21 +0800">January 10, 2016</time></span></span>
+        <span class="author vcard"><span class="fn">yekki</span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/apple-sip-overview-and-how-to-disable-it-in-clover/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://localhost:4000/how-to-fix-intel-usb-ports-in-os-x-el-capitan/" class="read-more-btn">阅读更多</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://localhost:4000/jekyll-blog-installation/" title="本博客安装简略">本博客安装简略</a></h3>
+      <p>## 下载博客项目{% highlight bash %}git clone https://github.com/yekki/yekki.github.comcd yekki.github.com{% endhighlight %}## 穿越GFW{% highlight...&hellip; <a href="http://localhost:4000/jekyll-blog-installation/">继续阅读</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://localhost:4000/how-to-verify-and-repair-permissions-in-osx-el-capitan/" title="OSX El Capitan如何校验与修复磁盘权限">OSX El Capitan如何校验与修复磁盘权限</a></h4>
+        <span>发布于 February 22, 2016</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://localhost:4000/what-is-el-capitan/" title="El Capitan是什么意思">El Capitan是什么意思</a></h4>
+        <span>发布于 February 20, 2016</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 yekki. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yekkis'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+
+</body>
+</html>

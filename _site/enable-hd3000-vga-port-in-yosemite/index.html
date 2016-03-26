@@ -1,0 +1,298 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>在Yosemite中为HD3000显卡开启VGA &#8211; 苹果园</title>
+<meta name="description" content="黑苹果、白苹果、果果香">
+<meta name="keywords" content="显卡, HD3000, Yosemite, VGA, 黑苹果">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Yosemite中为HD3000显卡开启VGA">
+<meta property="og:description" content="黑苹果、白苹果、果果香">
+<meta property="og:url" content="http://localhost:4000/enable-hd3000-vga-port-in-yosemite/">
+<meta property="og:site_name" content="苹果园">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/enable-hd3000-vga-port-in-yosemite/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="苹果园 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<!--<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">-->
+<link href="//fonts.useso.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<!-- <script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>-->
+<script src="//cdn.bootcss.com/modernizr/2.6.2/modernizr.min.js"></script>
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">打开菜单</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000/">首页</a></li>
+		<li>
+			<a href="#">关于</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/avatar.png" alt="yekki photo" class="author-photo">
+					<h4>yekki</h4>
+					<p>苹果圈儿里中间件最厉害的，中间件圈儿里苹果技术最牛的！</p>
+				</li>
+				<li><a href="http://localhost:4000/about/"><span class="btn btn-inverse">了解更多</span></a></li>
+				<li>
+					<a href="mailto:gary.niu@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/yekki"><i class="fa fa-fw fa-twitter"></i> Weibo </a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="https://linkedin.com/in/yekki"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://github.com/yekki"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">文章</a>
+			<ul class="dl-submenu">
+				<li><a href="http://localhost:4000/posts/">所有文章</a></li>
+				<li><a href="http://localhost:4000/tags/">所有标签</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">主要项目</a>
+			<ul class="dl-submenu">
+				
+	    			
+	    			<li><a href="https://github.com/yekki/hackintosh-laptop-workbench" target="_blank">Hackintosh Laptop</a></li>
+	    		
+	    			
+	    			<li><a href="https://github.com/yekki/packer-oracle-linux" target="_blank">Packer for Oracle Linux</a></li>
+	    		
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://localhost:4000/enable-hd3000-vga-port-in-yosemite/" rel="bookmark" title="在Yosemite中为HD3000显卡开启VGA">在Yosemite中为HD3000显卡开启VGA</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2015-01-13T00:00:00+08:00">January 13, 2015</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+阅读用时 ~1 分钟
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>我的x220笔记本没有Mini-DP口，只有一个VGA口，我们知道苹果设备是不支持VGA口的，由于工作中常常需要讲PPT，因此，不能接投影仪对我来说是无法接收的。还好，x220使用的是HD3000核显，而这个型号的核显是可以实现VGA输出的，基本步骤如下：</p>
+
+<h2 id="smbios">设置SMBIOS</h2>
+<p>如果是Clover，在Clover Configurator中选择左侧的SMBIOS，右侧就是SMBIOS信息了，其中最重要的是『Product Name』，这项填入”MacBookPro8,1”	，当然，如果想省事儿，也可以向导生成（点击电脑图标右下的小魔法棒）。</p>
+
+<h2 id="dsdt">应用DSDT补丁</h2>
+<p>为MaciASL添加源 http://raw.github.com/RehabMan/Laptop-DSDT-Patch/master，应用补丁”graphics_HD3K_low.txt”</p>
+
+<h2 id="appleintelsnbgraphicsfbkext">修改AppleIntelSNBGraphicsFB.kext</h2>
+
+<h3 id="section">方法一</h3>
+<ul>
+  <li>
+    <p>备份/System/Library/Extensions/AppleIntelSNBGraphicsFB.kext</p>
+  </li>
+  <li>
+    <p>用二进制编辑器<a href="http://ridiculousfish.com/hexfiend/files/HexFiend.zip">HEX Friend</a>打开 /Ccontents/MacOS/AppleIntelSNBGraphicsFB
+查找：</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>0102 0400 1007 0000 1007 0000 0503 0000 0200 0000 3000 0000 0205 0000 0004 0000 0700 0000 0304 0000 0004 0000 0900 0000 0406 0000 0004 0000 0900 0000</p>
+</blockquote>
+
+<p>替换为：</p>
+
+<blockquote>
+  <p>0102 0300 1007 0000 1007 0000 0503 0000 0200 0000 3000 0000 0205 0000 0008 0000 0600 0000 0602 0000 0001 0000 0900 0000 0000 0000 0000 0000 0000 0000</p>
+</blockquote>
+
+<h3 id="section-1">方法二</h3>
+<p>使用Clover Configurator，在『Kernel and Kext Patches』-&gt; 『KextsToPath』中添加：</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Name:AppleIntelSNBGraphicsFB
+Find:010204001007000010070000050300000200000030000000020500000004000007000000030400000004000009000000040600000004000009000000
+Replace:010203001007000010070000050300000200000030000000020500000008000006000000060200000001000009000000000000000000000000000000</code></pre></figure>
+
+<p>或者真接修改config.plist，添加：</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;dict&gt;</span>
+	<span class="nt">&lt;key&gt;</span>Find<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;data&gt;</span>
+	AQIEABAHAAAQBwAABQMAAAIAAAAwAAAAAgUAAAAEAAAH
+	AAAAAwQAAAAEAAAJAAAABAYAAAAEAAAJAAAA
+	<span class="nt">&lt;/data&gt;</span>
+	<span class="nt">&lt;key&gt;</span>Name<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;string&gt;</span>AppleIntelSNBGraphicsFB<span class="nt">&lt;/string&gt;</span>
+	<span class="nt">&lt;key&gt;</span>Replace<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;data&gt;</span>
+	AQIDABAHAAAQBwAABQMAAAIAAAAwAAAAAgUAAAAIAAAG
+	AAAABgIAAAABAAAJAAAAAAAAAAAAAAAAAAAA
+	<span class="nt">&lt;/data&gt;</span>
+<span class="nt">&lt;/dict&gt;</span></code></pre></figure>
+
+<h2 id="section-2">基本原理解释</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">原始值
+0102 0400 1007 0000 1007 0000 //这句话表示你机器的接口数
+0503 0000 0200 0000 3000 0000 //笔记本显示器接口
+0205 0000 0004 0000 0700 0000 //下面3个都是用来显示的接口<span class="o">(</span>DVI<span class="o">)</span>
+0304 0000 0004 0000 0900 0000 
+0406 0000 0004 0000 0900 0000
+
+修改后
+0102 0300 1007 0000 1007 0000 //3个接口
+0503 0000 0200 0000 3000 0000 //LVDS 笔记本内置显示器接口
+0205 0000 0008 0000 0600 0000 //HDMI（除了0205，可能值：0304/0406）
+0602 0000 0001 0000 0900 0000 //VGA
+0000 0000 0000 0000 0000 0000 //NONE</code></pre></figure>
+
+<h2 id="appleintelsnbgraphicsfbkext-1">重新安装修改后的AppleIntelSNBGraphicsFB.kext，重启生效！</h2>
+<p><strong>小技巧</strong>：有时候通过VGA口接上外显或投影仪时，苹果不自动探测，此时，点击『系统偏好设置』-&gt;『显示器』，按住ALT键，你会看到右下的『集合窗口』按钮变为了『探测显示器』，点击就是了！</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#显卡" title="Pages tagged 显卡" class="tag"><span class="term">显卡</span></a><a href="http://localhost:4000/tags/#HD3000" title="Pages tagged HD3000" class="tag"><span class="term">HD3000</span></a><a href="http://localhost:4000/tags/#Yosemite" title="Pages tagged Yosemite" class="tag"><span class="term">Yosemite</span></a><a href="http://localhost:4000/tags/#VGA" title="Pages tagged VGA" class="tag"><span class="term">VGA</span></a><a href="http://localhost:4000/tags/#黑苹果" title="Pages tagged 黑苹果" class="tag"><span class="term">黑苹果</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2015-01-13 15:26:52 +0800">January 13, 2015</time></span></span>
+        <span class="author vcard"><span class="fn">yekki</span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/enable-hd3000-vga-port-in-yosemite/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/enable-hd3000-vga-port-in-yosemite/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/enable-hd3000-vga-port-in-yosemite/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://localhost:4000/q-and-a-summary/" class="read-more-btn">阅读更多</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://localhost:4000/jekyll-blog-installation/" title="本博客安装简略">本博客安装简略</a></h3>
+      <p>## 下载博客项目{% highlight bash %}git clone https://github.com/yekki/yekki.github.comcd yekki.github.com{% endhighlight %}## 穿越GFW{% highlight...&hellip; <a href="http://localhost:4000/jekyll-blog-installation/">继续阅读</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://localhost:4000/how-to-verify-and-repair-permissions-in-osx-el-capitan/" title="OSX El Capitan如何校验与修复磁盘权限">OSX El Capitan如何校验与修复磁盘权限</a></h4>
+        <span>发布于 February 22, 2016</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://localhost:4000/what-is-el-capitan/" title="El Capitan是什么意思">El Capitan是什么意思</a></h4>
+        <span>发布于 February 20, 2016</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 yekki. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'yekkis'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+
+</body>
+</html>

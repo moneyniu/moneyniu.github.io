@@ -1,0 +1,7 @@
+# Menu navigation links
+
+- title: Hackintosh Laptop
+  url: https://github.com/yekki/hackintosh-laptop-workbench
+
+- title: Packer for Oracle Linux
+  url: https://github.com/yekki/packer-oracle-linux
