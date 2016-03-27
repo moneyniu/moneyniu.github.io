@@ -53,19 +53,6 @@
 				<li><a href="{{ site.url }}/tags/">所有标签</a></li>
 			</ul>
 		</li>
-		<li>
-			<a href="#">主要项目</a>
-			<ul class="dl-submenu">
-				{% for link in site.data.projects %}
-	    			{% if link.url contains 'http' %}
-	        			{% assign domain = '' %}
-	        		{% else %}
-	        			{% assign domain = site.url %}
-	    			{% endif %}
-	    			<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-	    		{% endfor %}
-			</ul>
-		</li>
 		{% for link in site.data.navigation %}
 	    {% if link.url contains 'http' %}
 	        {% assign domain = '' %}
